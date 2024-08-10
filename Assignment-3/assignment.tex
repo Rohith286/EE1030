@@ -1,0 +1,177 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{CHAPTER - 20\\Vector Algebra and\\Three Dimensional Geometry}
+\author{EE24BTECH11061 - Rohith Sai}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section{Fill in the Blanks}
+\begin{enumerate}
+\item Let $OA=a, OB = 10a + 2b$ and $OC =b$ where $O, A$ and $C$ are non-collinear points. Let $p$ denote the area of the quadrilateral $OABC$, and let $q$ denote the area of the parallelogram with $OA$ and $OC$ as adjacent sides. If $p=kq$, then $k$=.......
+\hfill{\textbf{(1997 - 2 Marks)}}
+\end{enumerate}
+
+\section{True/False}
+\begin{enumerate}
+\item Let $\vec{A}, \vec{B}$ and $\vec{C}$ be unit vectors suppose that $\vec{A}.\vec{B} = \vec{A}.\vec{C}=0$, and that the angle between $\vec{B}$ and $\vec{C}$ is $\frac{\pi}{6}$. Then $\vec{A}=\pm2(\vec{B}\times\vec{C})$.\\
+\hfill {\textbf{(1981 - 2 Marks)}}
+
+\item If $\vec{X}.\vec{A}=0, \vec{X}.\vec{B}=0, \vec{X}\vec{C}=0$ for some non-zero vector $\vec{X}$, then $[A B C]=0$
+\hfill \textbf{(1983 - 1 Mark)}
+
+\item The points with position vectors $\vec{a+b}$, $\vec{a-b}$ and $\vec{a+kb}$ are collinear for all real values of $k$.
+\hfill{\textbf{(1984 - 1 Mark)}}
+
+\item For any three vectors $\vec{a}, \vec{b}$ and $\vec{c}$, $(\vec{a}-\vec{b}).{(\vec{b}-\vec{c)}\times(\vec{c}-\vec{a})} = 2\vec{a}.(\vec{b}\times\vec{c}).$\\
+\hfill{\textbf{(1989 - 1 Mark)}}
+\end{enumerate}
+
+\section{MCQs with One Correct Answer}
+\begin{enumerate}
+\item The scalar $\vec{A}.(\vec{B}+\vec{C})\times(\vec{A}+\vec{B}+\vec{C})$ equals:\\
+\begin{enumerate}[label=(\alph*)]
+\item  $0$
+\item $[\vec{A}\ \vec{B}\ \vec{C}] + [\vec{B}\ \vec{C}\ \vec{A}]$
+\item $[\vec{A}\ \vec{B}\ \vec{C}]$
+\item None of these
+\end{enumerate}
+\hfill{\textbf{(1981 - 2 Marks)}}
+
+\item For non-zero vectors $\vec{a}, \vec{b}, \vec{c} |(\vec{a}\times\vec{b}).\vec{c}| = |\vec{a}||\vec{b}||\vec{c}|$ holds if and only if
+\begin{enumerate}[label=(\alph*)]
+\item $\vec{a}.\vec{b}=0 ,\ \vec{b}.\vec{c}=0$
+\item $\vec{b}.\vec{c}=0 ,\ \vec{c}.\vec{a}=0$
+\item $\vec{c}.\vec{a}=0 ,\ \vec{a}.\vec{b}=0$
+\item $\vec{a}.\vec{b}=\ \vec{b}.\vec{c}=\ \vec{c}.\vec{a}=0$
+\end{enumerate}
+\hfill{\textbf{(1982 - 2 Marks)}}
+
+\item The volume of the parallelopiped whose sides are given by $\vec{OA}=\vec{2i}-\vec{2j} ,\ \vec{OB} = \vec{i}+\vec{j}-\vec{k} ,\ \vec{OC}= \vec{3i}-\vec{k}$, is 
+\begin{enumerate}[label = (\alph*)]
+\item $\frac{4}{13}$
+\item $4$
+\item $\frac{2}{7}$
+\item None of these
+\end{enumerate}
+\hfill{\textbf{(1983 - 1 Mark)}}
+
+\item The points with position vectors $\vec{60i + 3j},\ \vec{40i-8j},\ \vec{ai-52j}$ are collinear if
+\begin{enumerate}[label = (\alph*)]
+\item $a=-40$
+\item $a=40$
+\item $a=20$
+\item None of these
+\end{enumerate}
+\hfill{\textbf{(1983 - 1 Mark)}}
+
+\item Let $\vec{a}, \vec{b}, \vec{c}$ be three non coplanar vectors and $\vec{p}, \vec{q},\vec{r}$ are vectors defined by the relations $\vec{p}=\frac{\vec{b}\times\vec{c}}{[\vec{a}\ \vec{b}\ \vec{c}]}, \vec{q}=\frac{\vec{c}\times\vec{a}}{[\vec{a}\ \vec{b}\ \vec{c}]},\vec{r}=\frac{\vec{a}\times\vec{b}}{[\vec{a}\ \vec{b}\ \vec{c}]}$ then the value of the expression $(\vec{a}+\vec{b}).\vec{p}+(\vec{b}+\vec{c}).\vec{q}+(\vec{c}+\vec{a}).\vec{r}$ is equal to
+\begin{enumerate}[label = (\alph*)]
+\item $0$
+\item $1$
+\item $2$
+\item $3$
+\end{enumerate}
+\hfill{\textbf{(1988 - 2 Marks)}}
+
+\item Let $a, b, c$ be distinct non-negative numbers. If the vectors $\vec{ai + aj + ck},\ \vec{i+k}$ and $\vec{ci+cj+bk}$ lie in a plane, then $c$ is
+\begin{enumerate}[label=(\alph*)]
+\item the Arithmetic Mean of $a$ and $b$
+\item the Geometric Mean of $a$ and $b$
+\item the Harmonic Mean of $a$ and $b$
+\item equal to zero
+\end{enumerate}
+\hfill{\textbf{(1993 - 1 Mark)}}
+
+\item Let $\vec{p}$ and $\vec{q}$ be the position vectors of $P$ and $Q$ respectively, with respect to $O$ and $|\vec{p}| = p$, $|\vec{q}| = q$. The points $R$ and $S$ divide $PQ$ internally and externally in the ratio $2:3$ respectively. If $OR$ and $OS$ are perpendicular then
+\begin{enumerate}[label = (\alph*)]
+\item $9p^2 =4q^2$
+\item $4p^2 = 9q^2$
+\item $9p = 4q$
+\item $4p = 9q$
+\end{enumerate}
+\hfill{\textbf{(1994)}}
+
+\item Let $\alpha,\ \beta,\ \gamma$ be distinct real numbers. The points with position vectors $\vec{\alpha i+ \beta j + \gamma k}$, $\vec{\beta i+ \gamma j+ \alpha k}$, $\vec{\gamma i + \alpha j + \beta k}$
+\begin{enumerate}[label = (\alph*)]
+\item are collinear
+\item form an equilateral triangle
+\item form a scalene triangle
+\item form a right angles triangle
+\end{enumerate}
+\hfill{\textbf{(1994)}}
+
+\item Let $\vec{a=i-j}$, $\vec{b=j-k}$, $\vec{c=k-i}$. If $\vec{d}$ is a unit vector such that $\vec{a}.\vec{d} = 0 = [\vec{b} \ \vec{c} \ \vec{d}]$, then $\vec{d}$ equals
+\begin{enumerate}[label=(\alph*)]
+\item $\pm \frac{\vec{i+j-2k}}{\sqrt{6}}$
+\item $\pm \frac{\vec{i+k-k}}{\sqrt{3}}$
+\item $\pm \frac{\vec{i+j+k}}{\sqrt{3}}$
+\item $\pm \vec{k}$
+\end{enumerate}
+\hfill{\textbf{(1995S)}}
+
+\item If $\vec{a},\vec{b},\vec{c}$ are non coplanar unit vectors such that $\vec{a}\times(\vec{b} \times \vec{c}) = \frac{(\vec{b}+\vec{c})}{\sqrt{2}}$, then the angle between $\vec{a}$ and $\vec{b}$ is
+\begin{enumerate}[label = (\alph*)]
+\item $\frac{3 \pi}{4}$
+\item $\frac{\pi}{4}$
+\item $\frac{\pi}{2}$
+\item $\pi$
+\end{enumerate}
+\hfill{\textbf{(1995S)}}
+\end{enumerate}
+
+\end{document}

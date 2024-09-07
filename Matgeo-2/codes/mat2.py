@@ -1,18 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from params import omat, e1, e2
 
-# Define points
-P = np.array([2, -3]).reshape(-1, 1)
-x1 = 10
-y1 = 3  # One possible value for y
-y2 = -9  # Second possible value for y
+# Functions from the provided code
+def dir_vec(A,B):
+    return B - A
 
-# Point Q1 and Q2 for the two y-values
-Q1 = np.array([x1, y1]).reshape(-1, 1)
-Q2 = np.array([x1, y2]).reshape(-1, 1)
-
-# Function to generate points on the line
-def line_gen(A, B):
+def line_gen(A,B):
     len = 10
     dim = A.shape[0]
     x_AB = np.zeros((dim, len))
@@ -21,6 +15,27 @@ def line_gen(A, B):
         temp1 = A + lam_1[i] * (B - A)
         x_AB[:, i] = temp1.T
     return x_AB
+
+def Matnorm(vec):
+    return np.linalg.norm(vec)
+
+# Main logic to solve for y
+P = np.array([2, -3]).reshape(-1, 1)
+
+# Distance equation is d = 10
+d = 10
+x1 = 10
+
+# Solving the equation sqrt((x2 - x1)^2 + (y2 - y1)^2) = d
+# (10 - 2)^2 + (y + 3)^2 = 100
+# Simplifying leads to (y + 3)^2 = 36
+
+y1 = 3  # One possible value for y
+y2 = -9  # Second possible value for y
+
+# Point Q1 and Q2 for the two y-values
+Q1 = np.array([x1, y1]).reshape(-1, 1)
+Q2 = np.array([x1, y2]).reshape(-1, 1)
 
 # Generating line points for both pairs
 line1 = line_gen(P, Q1)

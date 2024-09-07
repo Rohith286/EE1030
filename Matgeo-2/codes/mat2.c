@@ -99,6 +99,8 @@ int main() {
     double distance1 = Matnorm(diff1, 2);
     double distance2 = Matnorm(diff2, 2);
 
+    printf("y1 = %lf", y1);
+    printf("y2 = %lf", y2);
     printf("Distance between P and Q1: %.2f\n", distance1);
     printf("Distance between P and Q2: %.2f\n", distance2);
 
@@ -111,4 +113,3 @@ int main() {
 
     return 0;
 }
-

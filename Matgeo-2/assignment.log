@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.6)  1 SEP 2024 17:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.6)  7 SEP 2024 23:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1736,12 +1736,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 3
 (/usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-No file assignment.aux.
+(./assignment.aux)
 \openout1 = `assignment.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 39.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 39.
+
 (/usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1917,6 +1918,8 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 39.
+
+(./assignment.out) (./assignment.out)
 \@outlinefile=\write5
 \openout5 = `assignment.out'.
 
@@ -1956,32 +1959,36 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-) [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr
-/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
+)
+<figs/figure.png, id=35, 462.528pt x 346.896pt>
+File: figs/figure.png Graphic file (type png)
+<use figs/figure.png>
+Package pdftex.def Info: figs/figure.png  used on input line 89.
+(pdftex.def)             Requested size: 284.52756pt x 213.40593pt.
+ [1{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/
+local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
-] (./assignment.aux)
+] [2 <./figs/figure.png>]
+(./assignment.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
 
 
-Package rerunfilecheck Warning: File `assignment.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `assignment.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  E93FC20D847874EFEBF1A911724CC552;96.
+Package rerunfilecheck Info: File `assignment.out' has not changed.
+(rerunfilecheck)             Checksum: E93FC20D847874EFEBF1A911724CC552;96.
  ) 
 Here is how much of TeX's memory you used:
- 53161 strings out of 474116
- 1263669 string characters out of 5743683
- 1944187 words of memory out of 5000000
- 74703 multiletter control sequences out of 15000+600000
+ 53186 strings out of 474116
+ 1264123 string characters out of 5743683
+ 1945187 words of memory out of 5000000
+ 74720 multiletter control sequences out of 15000+600000
  622961 words of font info for 169 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 109i,14n,109p,1200b,893s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,14n,109p,1200b,894s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></us
 r/local/texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local
 /texlive/2024/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/local/texli
@@ -1990,10 +1997,10 @@ ve/2024/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2024
 dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw
 /times/utmri8a.pfb>
-Output written on assignment.pdf (1 page, 46971 bytes).
+Output written on assignment.pdf (2 pages, 76288 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

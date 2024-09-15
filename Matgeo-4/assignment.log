@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.6)  16 SEP 2024 02:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.6)  16 SEP 2024 02:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1982,7 +1982,7 @@ Package rerunfilecheck Warning: File `assignment.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `assignment.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  469D3F5CD7D2E0B880CFD37916D1D376;101.
+(rerunfilecheck)             After:  A208E8E76B1BE8102F67AF8CB8F883BD;129.
  ) 
 Here is how much of TeX's memory you used:
  53195 strings out of 474116
@@ -1999,7 +1999,7 @@ ve/2024/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2024
 /texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2024/texmf-
 dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb>
-Output written on assignment.pdf (2 pages, 92885 bytes).
+Output written on assignment.pdf (2 pages, 92881 bytes).
 PDF statistics:
  101 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream

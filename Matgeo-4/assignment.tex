@@ -1,0 +1,107 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{CHAPTER - 1\\Vector Arithmetic}
+\author{EE24BTECH11061 - Rohith Sai}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+\section{Unit Vector}
+\begin{enumerate}
+\item [1.10.5] If $\vec{a} =\vec{i+j+2k}$ and $\vec{b} = \vec{2i+j-2k}$, find the unit vector in the direction of
+\begin{enumerate}
+    \item $6\vec{a}$
+    \item $2\vec{a}-\vec{b}$
+\end{enumerate}
+\textbf{Solution:}
+\begin{table}[h!]    
+      \centering
+      \input{tables/table.tex}
+      \caption{}
+    \end{table}\\
+a) According to the question:
+\begin{align}
+    6\vec{a} = 6\myvec{1\\1\\2},\\
+    \abs{\abs{6\vec{a}}} = 6\abs{\abs{\vec{a}}} = 6\sqrt{{\brak{\vec{a}}^\top\brak{\vec{a}}}},\\
+    \implies \abs{\abs{6\vec{a}}} = 6\sqrt{6}
+\end{align}
+We know that, to find the unit vector:
+\begin{align}
+    \implies \frac{6\vec{a}}{\abs{\abs{6\vec{a}}}} = \frac{1}{6\sqrt{6}}\myvec{6\\6\\12}
+\end{align}
+Therefore, the required unit vector is:
+\begin{align}
+    \implies \frac{1}{\sqrt{6}}\myvec{1\\1\\2}
+\end{align}
+
+b) According to the question:
+\begin{align}
+    2\vec{a}-\vec{b} = 2\myvec{1\\1\\2}-\myvec{2\\1\\-2} = \myvec{0\\1\\6},\\
+    \abs{\abs{2\vec{a}-\vec{b}}} = \sqrt{{\brak{2\vec{a}-\vec{b}}^\top\brak{2\vec{a}-\vec{b}}}},\\
+    \implies \abs{\abs{2\vec{a}-\vec{b}}} = \sqrt{37}
+\end{align}
+We know that, to find the unit vector:
+\begin{align}
+    \implies \frac{2\vec{a}-\vec{b}}{\abs{\abs{2\vec{a}-\vec{b}}}} = \frac{1}{\sqrt{37}}\myvec{0\\1\\6}
+\end{align}
+Therefore, the required unit vector is:
+\begin{align}
+    \implies \frac{1}{\sqrt{37}}\myvec{0\\1\\6}
+\end{align}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=10cm]{figs/figure.png}
+    \label{fig:figure}
+\end{figure}
+\end{enumerate}
+\end{document}

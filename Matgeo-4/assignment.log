@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.6)  16 SEP 2024 02:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.8.6)  16 SEP 2024 09:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1736,12 +1736,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 3
 (/usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-No file assignment.aux.
+(./assignment.aux)
 \openout1 = `assignment.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 39.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 39.
+
 (/usr/local/texlive/2024/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1917,6 +1918,8 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 39.
+
+(./assignment.out) (./assignment.out)
 \@outlinefile=\write5
 \openout5 = `assignment.out'.
 
@@ -1961,7 +1964,7 @@ File: ts1txr.fd 2000/12/15 v3.1
 ap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 ]
-<figs/figure.png, id=52, 462.528pt x 346.896pt>
+<figs/figure.png, id=55, 462.528pt x 346.896pt>
 File: figs/figure.png Graphic file (type png)
 <use figs/figure.png>
 Package pdftex.def Info: figs/figure.png  used on input line 103.
@@ -1971,24 +1974,14 @@ Package pdftex.def Info: figs/figure.png  used on input line 103.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `assignment.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `assignment.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  A208E8E76B1BE8102F67AF8CB8F883BD;129.
+Package rerunfilecheck Info: File `assignment.out' has not changed.
+(rerunfilecheck)             Checksum: A208E8E76B1BE8102F67AF8CB8F883BD;129.
  ) 
 Here is how much of TeX's memory you used:
- 53195 strings out of 474116
- 1264349 string characters out of 5743683
+ 53205 strings out of 474116
+ 1264506 string characters out of 5743683
  1951187 words of memory out of 5000000
- 74729 multiletter control sequences out of 15000+600000
+ 74733 multiletter control sequences out of 15000+600000
  622961 words of font info for 169 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  109i,16n,109p,1200b,1030s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1999,10 +1992,10 @@ ve/2024/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/local/texlive/2024
 /texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2024/texmf-
 dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb>
-Output written on assignment.pdf (2 pages, 92881 bytes).
+Output written on assignment.pdf (2 pages, 91168 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+ 105 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  18 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 

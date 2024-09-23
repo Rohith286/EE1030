@@ -25,13 +25,17 @@ void twoDtriangle_gen(double sideAB, double sideBC, double angleABC, char filena
     xB = 0;
     yB = 0;
 
-    // Calculating coordinates for C using sideBC and angleABC
-    xA = sideAB * cos(angleABC);
-    yA = sideAB * sin(angleABC);
-
-    
-    xC = sideBC;
+    // Coordinates for C (fixed on x-axis)
+    xC = sideBC;  // C is at (6, 0)
     yC = 0;
+
+    // Use rotation matrix to calculate coordinates for A
+    double cosTheta = cos(angleABC);
+    double sinTheta = sin(angleABC);
+
+    // Initially, vector AB points along the negative x-axis: (-sideAB, 0)
+    xA = -sideAB * cosTheta;
+    yA = sideAB * sinTheta;
 
     int m = 2, n = 1;
 

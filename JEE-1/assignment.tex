@@ -1,0 +1,215 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{JEE MAINS 2020\\September 2 - Shift 1}
+\author{EE24BTECH11061 - Rohith Sai}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+\item A line parallel to the straight line $2x-y = 0$ is tangent to the hyperbola $\frac{x^2}{4}-\frac{y^2}{2} = 1$ at the point $\brak{x_1, y_1}$. Then $x_1^2 + 5y_1^2$ is equal to:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $6$
+        \item $10$
+        \item $8$
+        \item $5$
+    \end{enumerate}
+\end{multicols}
+
+\item The domain of the function $f(x) = \sin^{-1}\brak{\frac{\abs{x}+5}{x^2+1}}$ is $(-\infty,-a] \cup [a,\infty) $. Then $a$ is equal to:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\frac{\sqrt{17}-1}{2}$
+        \item $\frac{\sqrt{17}}{2}$
+        \item $\frac{1+\sqrt{17}}{2}$
+        \item $\frac{\sqrt{17}}{2} + 1$
+        \end{enumerate}
+\end{multicols}
+
+\item If a function $f(x)$ defined by
+\begin{align}
+    f(x) = \begin{cases}
+ae^x + be^{-x}, & \text{if } -1\leq x < 1\\
+cx^2, & \text{if } 1\leq x \leq 3\\
+ax^2 + 2cx, & \text{if } 3 < x \leq 4
+\end{cases}
+\end{align}
+be continuous for some $a,b,c$ $\epsilon$ $\mathbb{R}$ and $f^{\prime}(0) + f^{\prime}(2) = e$, then the value of $a$ is:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\frac{1}{e^2-3e+13}$
+        \item $\frac{e}{e^2-3e-13}$
+        \item $\frac{e}{e^2+3e+13}$
+        \item $\frac{e}{e^2-3e+13}$
+    \end{enumerate}
+\end{multicols}
+
+\item The sum of the first three terms of G.P is S and their product is 27. Then all such S lie in
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $(-\infty, -9] \cup [3,\infty]$
+        \item $[-3,\infty)$
+        \item $(-\infty,-9]$
+        \item $(-\infty,-3] \cup [9,\infty)$
+    \end{enumerate}
+\end{multicols}
+
+\item If $R$ = \{$(x,y)$ $\colon$ $x,y$ $\epsilon$ $\mathbb{Z}$, $x^2+3y^2 \leq 8$\} is relation on the set of integers $\mathbb{Z}$, then the domain of R$^{-1}$ is:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item \{-1, 0, 1\}
+        \item \{-2, -1, 1, 2\}
+        \item \{0, 1\}
+        \item \{-2, -1, 0, 1, 2\}
+    \end{enumerate}
+\end{multicols}
+
+\item The value of $\brak{\frac{1+\sin{\frac{2\pi}{9}} + \iota \cos{\frac{2\pi}{9}}}{{1+\sin{\frac{2\pi}{9}} - \iota \cos{\frac{2\pi}{9}}}}}^3$
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\frac{-1}{2}\brak{1-\iota\sqrt{3}}$
+        \item $\frac{1}{2}\brak{1-\iota\sqrt{3}}$
+        \item $\frac{-1}{2}\brak{\sqrt{3}-\iota}$
+        \item $\frac{1}{2}\brak{\sqrt{3}-\iota}$
+    \end{enumerate}
+\end{multicols}
+
+\item Let $\vec{P}\brak{h,k}$ be a point on the curve $y=x^2+7x+2$, nearest to the line, $y=3x-3$. Then the equation of the normal to the curve at $\vec{P}$ is:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $x+3y-62=0$
+        \item $x-3y-11=0$
+        \item $x-3y+22=0$
+        \item $x+3y+26=0$
+    \end{enumerate}
+\end{multicols}
+
+\item Let A be a $2\times2$ real matrix with entries from \{0,1\} and A$\neq$0. Consider the following two statements:\\
+(P) If A$\neq$ $I_2$, then A = -1\\
+(Q) If $\det{A}$ = 1, then tr(A) = 2,\\
+where $I_2$ denotes $2\times2$ identity matrix and tr(A) denotes the sum of the diagonal entries of A. Then:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item Both (P) and (Q) are false
+        \item (P) is true and (Q) is false
+        \item Both (P) and (Q) are false
+        \item (P) is false and (Q) is true
+    \end{enumerate}
+\end{multicols}
+
+\item Box I contains 30 cards numbered 1 to 30 and Box II contains 20 cards numbered 31 to 50. A box is selected at random and a card is drawn from it. The number on the card is found to be a non-prime number. The probability that the card was drawn from Box I is:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\frac{4}{17}$
+        \item $\frac{8}{17}$
+        \item $\frac{2}{5}$
+        \item $\frac{2}{3}$
+    \end{enumerate}
+\end{multicols}
+
+\item If $p(x)$ be a polynomial of degree three that has a local maximum value 8 at $x=1$ and a local minimum value 4 at $x=2$; then $p(0)$ is equal to:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item 12
+        \item -12
+        \item -24
+        \item 6
+    \end{enumerate}
+\end{multicols}
+
+\item The contra-positive of the statement "If I reach teh station in time, then i will catch the train" is:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item If I will catch the train, then I reach the station in time.
+        \item If I do not reach the station in time, then I will catch the train.
+        \item  If I do not reach the station in time, then I will not catch the train.
+        \item If I will not catch the train, then I do not reach the station in time.
+    \end{enumerate}
+\end{multicols}
+
+\item Let $\alpha$ and $\beta$ be the roots of the equation, $5x^2+6x-2=0$. If $S_n = {\alpha}^n + {\beta}^n$, $n=1,2,3,\dots$ then:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $5S_6+6S_5+2S_4=0$
+        \item $6S_6+5S_5=2S_4$
+        \item $6S_6+5S_5+2S_4=0$
+        \item $5S_6+6S_5=2S_4$
+    \end{enumerate}
+\end{multicols}
+
+\item If the tangent to the curve $y=x+\sin y$ at a point $\brak{a,b}$ is parallel to the line joining $\brak{0,\frac{3}{2}}$ and $\brak{\frac{1}{2},2}$, then:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $b=\brak{\frac{\pi}{2}+a}$
+        \item $\abs{a+b} = 1$
+        \item $\abs{b-a} = 1$
+        \item $b=a$
+    \end{enumerate}
+\end{multicols}
+
+\item Area (in sq. units) of the region outside $\frac{x}{2} + \frac{y}{3} = 1$ and inside the ellipse $\frac{x^2}{4} + \frac{y^2}{9} = 1$ is:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $3\brak{\pi - 2}$
+        \item $6\brak{\pi - 2}$
+        \item $6\brak{4 - \pi}$
+        \item $3\brak{4 - \pi}$
+    \end{enumerate}
+\end{multicols}
+
+\item If $\abs{x} < 1$, $\abs{y} < 1$, and $xy$, then the sum to infinity of the following series 
+\begin{align}
+    \brak{x+y} + \brak{x^2+xy+y^2} + \brak{x^3 + x^2y + xy^2 + y^3} + \dots
+\end{align}
+is:
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\frac{x+y+xy}{\brak{1-x}\brak{1-y}}$
+        \item $\frac{x+y-xy}{\brak{1-x}\brak{1-y}}$
+        \item $\frac{x+y+xy}{\brak{1+x}\brak{1+y}}$
+        \item $\frac{x+y-xy}{\brak{1+x}\brak{1+y}}$
+    \end{enumerate}
+\end{multicols}
+\end{enumerate}
+\end{document}

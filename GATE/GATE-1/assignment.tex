@@ -1,0 +1,279 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{GATE\\MA - 2007}
+\author{EE24BTECH11061 - Rohith Sai}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section*{Single Correct}
+\begin{enumerate}
+\item For which of the following pair of functions $y_1\brak{x}$ and $y_2\brak{x}$, continuous functions $p\brak{x}$ and $q\brak{x}$ can be determined on $\sbrak{-1,1}$ such that $y_1\brak{x}$ and $y_2\brak{x}$ give two linearly independent solutions of 
+\begin{align*}
+    y^{{\prime}{\prime}} +  p\brak{x} y^{\prime} + q\brak{x} y = 0, x \in \sbrak{-1,1}.
+\end{align*}
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $y_1\brak{x} = x \sin{\brak{x}}$, $y_2\brak{x} = \cos{\brak{x}}$
+        \item $y_1\brak{x} = x e^{x}$, $y_2\brak{x} = \sin{\brak{x}}$
+        \item $y_1\brak{x} = e^{x-1}$, $y_2\brak{x} = e^{x}-1$
+        \item $y_1\brak{x} = x^2$, $y_2\brak{x} = \cos{\brak{x}}$
+    \end{enumerate}
+\end{multicols}
+
+\item Let $J_0\brak{\cdot}$ and $J_1\brak{\cdot}$ be the Bessel functions of the first kind of orders zero and one, respectively. If
+\begin{align*}
+    \mathfrak{L}\brak{J_0\brak{t}} = \frac{1}{\sqrt{s^2+1}}
+\end{align*}
+then $\mathfrak{L}\brak{J_1\brak{t}} = $
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\frac{s}{\sqrt{s^2+1}}$
+        \item $\frac{1}{\sqrt{s^2+1}} - 1$
+        \item $1- \frac{s}{\sqrt{s^2+1}}$
+        \item $\frac{s}{\sqrt{s^2+1}} - 1$
+    \end{enumerate}
+\end{multicols}
+
+\section*{Common Data Questions}
+\subsection*{Common Data for Questions 71, 72, 73:}
+Let $P\sbrak{0,1} = \{p: p \text{ is a polynomial function on } \sbrak{0,1}\}$. For $p \in P\sbrak{0,1}$, define 
+\begin{align*}
+    \abs{\abs{p}} = \text{sup} \{\abs{p\brak{x}}\colon 0 \leq x \leq 1\}.
+\end{align*}
+Consider the map $T \colon P\sbrak{0,1} \rightarrow P\sbrak{0,1}$ defined by
+\begin{align*}
+    \brak{Tp}\brak{x} = \frac{d}{dx}\brak{p\brak{x}}.
+\end{align*}
+Then $P\sbrak{0,1}$ is a normed linear space and $T$ is a linear map. The map $T$ is said to be closed if the set $G = \{\brak{p,Tp} \colon p \in P\sbrak{0,1}\}$ is a closed subset of $P\sbrak{0,1} \times P\sbrak{0,1}$.
+\item The linear map $T$ is
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item one to one and onto
+        \item one to one but NOT onto
+        \item onto but NOT one to one
+        \item neither one to one nor onto
+    \end{enumerate}
+\end{multicols}
+\item The normed linear space $P\sbrak{0,1}$ is 
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item a finite, dimensional normed linear space which is NOT a Banach space
+        \item a finite dimensional Banach space
+        \item an infinite dimensional normed linear space which is NOT a Banach space
+        \item an infinite dimensional Banach space
+    \end{enumerate}
+\end{multicols}
+\item The map $T$ is
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item closed and continuous
+        \item neither continuous nor closed 
+        \item continuous but NOT closed
+        \item closed but NOT continuous
+    \end{enumerate}
+\end{multicols}
+
+\subsection*{Common Data for Questions 74, 75:}
+Let $X$ and $Y$ be jointly distributed random variables such that the conditional distribution of $Y$, given $X = x$, is uniform on the interval $\brak{x-1, x+1}$. Suppose $E\brak{X} = 1$ and $Var\brak{X} = \frac{5}{3}$.
+\item The mean of the random variable $Y$ is 
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\frac{1}{2}$
+        \item $1$
+        \item $\frac{3}{2}$
+        \item $2$
+    \end{enumerate}
+\end{multicols}
+\item The variance of the random variable $Y$ is
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\frac{1}{2}$
+        \item $\frac{2}{3}$
+        \item $1$
+        \item $2$
+    \end{enumerate}
+\end{multicols}
+
+\subsection*{Statement for Linked Answer Questions 76 \& 77:}
+Suppose the equation 
+\begin{align*}
+    x^2 y^{{\prime}{\prime}} - x y^{\prime} + \brak{1+x^2} y = 0
+\end{align*}
+has a solution of the form
+\begin{align*}
+    y = x^{r} \sum^{\infty}_{n=0} c_n x^n, c_0 \neq 0.
+\end{align*}
+\item The indicial equation for $r$ is
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $r^2 - 1 = 0$
+        \item $\brak{r-1}^2 = 0$
+        \item $\brak{r+1}^2 = 0$
+        \item $r^2+1 = 0$
+    \end{enumerate}
+\end{multicols}
+\item For $n\geq 2 $, the coefficients $c_n$ will satisfy the relation
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $n^2 c_n - c_{n-2} = 0$
+        \item $n^2 c_n + c_{n-2} = 0$
+        \item $c_n - n^2 c_{n-2} = 0$
+        \item $c_n + n^2 c_{n-2} = 0$
+    \end{enumerate}
+\end{multicols}
+
+\subsection*{Statement for Linked Answer Questions 78 \& 79:}
+A particle of mass $m$ slides down without friction along a curve $x = 1 + \frac{x^2}{2}$ in the $xz-plane$ under the action of constant gravity. Suppose the $z-axis$ points vertically upwards. Let $\dot{x}$ and $\ddot{x}$ denote $\frac{dx}{dt}$ and $\frac{d^2x}{dt^2}$, respectively.
+\item The Lagrangian of the motion is
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\frac{1}{2} m\dot{x}^2\brak{1+x^2} - mg\brak{1+\frac{x^2}{2}}$
+        \item $\frac{1}{2} m\dot{x}^2\brak{1+x^2} + mg\brak{1+\frac{x^2}{2}}$
+        \item $\frac{1}{2} m\dot{x}^2 x^2 - mg\brak{1+\frac{x^2}{2}}$
+        \item $\frac{1}{2} m\dot{x}^2\brak{1-x^2} - mg\brak{1+\frac{x^2}{2}}$
+    \end{enumerate}
+\end{multicols}
+\item The Lagrangian equation of motion is
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\ddot{x} \brak{1+x^2} = -x\brak{g+\dot{x}^2}$
+        \item $\ddot{x} \brak{1+x^2} = x\brak{g-\dot{x}^2}$
+        \item $\ddot{x} = - gx$
+        \item $\ddot{x} \brak{1-x^2} = -x \brak{g-\dot{x}^2}$
+    \end{enumerate}
+\end{multicols}
+
+\subsection*{Statement for Linked Answer Questions 80 \& 81:}
+Let $u\brak{x,t}$ be the solution of the one dimensional wave equation
+\begin{align*}
+    u_{tt} - 4 u_{xx} = 0, -{\infty} < x < {\infty}, t>0,
+    u\brak{x,0} = 
+    \begin{cases}
+        16-x^2, & \abs{x} \leq 4,\\
+        0, & \text{otherwise},
+    \end{cases}
+\end{align*}
+and
+\begin{align*}
+    u_t \brak{x,0} = 
+    \begin{cases}
+        1, & \abs{x} \leq 2,\\
+        0, & otherwise.
+    \end{cases}
+\end{align*}
+\item For $1 < t < 3$, $u\brak{2,t} = $
+\begin{enumerate}
+    \item $\frac{1}{2}\sbrak{16-\brak{2-2t}^2} + \frac{1}{2}\sbrak{1 - min\cbrak{1, t-1}}$
+    \item $\frac{1}{2}\sbrak{32-\brak{2-2t}^2 - \brak{2+2t}^2} + t$
+    \item $\frac{1}{2}\sbrak{32-\brak{2-2t}^2 - \brak{2+2t}^2} + 1$
+    \item $\frac{1}{2}\sbrak{16-\brak{2-2t}^2} + \frac{1}{2}\sbrak{1 - max\cbrak{1-t, -1}}$
+\end{enumerate}
+\item The value of $u_t\brak{2,2}$
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item equals -15
+        \item equals -16
+        \item equals 0
+        \item does NOT exist
+    \end{enumerate}
+\end{multicols}
+
+\subsection*{Statement for Linked Answer Questions 82 \& 83:}
+Suppose $E = \cbrak{\brak{x,y} \colon xy \neq 0}$. Let $f \colon \mathbb{R}^2 \rightarrow \mathbb{R}$ be defined by
+\begin{align*}
+    f\brak{x,y} =
+    \begin{cases}
+        0, & \text{if } xy = 0,\\
+        y \sin{\brak{\frac{1}{x}}} + x \sin{\brak{\frac{1}{y}}}, & \text{otherwise.}
+    \end{cases}
+\end{align*}
+Let $S_1$ be the set of points in $\mathbb{R}^2$ where $f_x$ exists and $S_2$ be the set of points in $\mathbb{R}^2$ where $f_y$ exists. Also, let $E_1$ be the set of points where $f_x$ is continuous and $E_2$ be the set of points where $f_y$ is continuous.
+\item $S_1$ and $S_2$ are given by
+\begin{enumerate}
+    \item $S_1 = E \cup \cbrak{\brak{x,y}\colon y=0}, S_2 = E \cup \cbrak{\brak{x,y}\colon x=0}$
+    \item $S_1 = E \cup \cbrak{\brak{x,y}\colon x=0}, S_2 = E \cup \cbrak{\brak{x,y}\colon y=0}$
+    \item $S_1 = S_2 = \mathbb{R}^2$
+    \item $S_1 = S_2 = E \cup \cbrak{\brak{0,0}}$
+\end{enumerate}
+\item $E_1$ and $E_2$ are given by
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $E_1 = E_2 = S_1 \cap S_2$
+        \item $E_1 = E_2 = S_1 \cap S_2 \verb|\| \cbrak{\brak{0,0}}$
+        \item $E_1 = S_1, E_2 = S_2$
+        \item $E_1 = S_2, E_2 = S_1$
+    \end{enumerate}
+\end{multicols}
+
+\subsection*{Statement for Linked Answer Questions 84 \& 85:}
+Let 
+\begin{align*}
+    A = \myvec{3 & 0 & 0\\0 & 6 & 2\\0 & 2 & 6}
+\end{align*}
+and let $\lambda_1\geq\lambda_2\geq\lambda_3$ be the eigenvalues  of $A$.
+\item The triple $\brak{\lambda_1, \lambda_2, \lambda_3}$ equals
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\brak{9,4,2}$
+        \item $\brak{8,4,3}$
+        \item $\brak{9,3,3}$
+        \item $\brak{7,5,3}$
+    \end{enumerate}
+\end{multicols}
+\item The matrix $P$ such that
+\begin{align*}
+    P^{\top}AP = \myvec{\lambda_1 & 0 & 0\\0 & \lambda_2 & 0\\0 & 0 & \lambda_3}
+\end{align*}
+is
+\begin{multicols}{2}
+    \begin{enumerate}
+        \item $\myvec{\frac{1}{\sqrt{3}} & 0 & \frac{-2}{\sqrt{6}} \\ \frac{1}{\sqrt{3}} & \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{6}} \\ \frac{1}{\sqrt{3}} & \frac{-1}{\sqrt{2}} & \frac{1}{\sqrt{6}}}$
+        \item $\myvec{\frac{1}{\sqrt{3}} & \frac{-2}{\sqrt{6}} & 0 \\ \frac{1}{\sqrt{3}} & \frac{1}{\sqrt{6}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{3}} & \frac{1}{\sqrt{6}} & \frac{-1}{\sqrt{2}}}$
+        \item $\myvec{0 & 0 & 1\\ \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} & 0 \\ \frac{1}{\sqrt{2}} & \frac{-1}{\sqrt{2}} & 0 }$
+        \item $\myvec{0 & 1 & 0\\ \frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & 0 & \frac{-1}{\sqrt{2}}}$
+    \end{enumerate}
+\end{multicols}
+\end{enumerate}
+\end{document}

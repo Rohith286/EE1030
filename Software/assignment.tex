@@ -1,0 +1,202 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{SOFTWARE ASSIGNMENT}
+\author{EE24BTECH11061 - Rohith Sai}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\section*{\textbf{Eigenvectors and Eigenvalues}}
+\subsection*{\textbf{Eigenvectors}}
+An \textbf{eigenvector} of a square matrix $A$ is a vector that, when transformed by $A$, does not change its direction. Mathematically, if $A$ is an $n \times n$ matrix, then an eigenvector $\vec{x}$ associated with $A$ is a non-zero vector that satisfies:
+\begin{align*}
+    A\vec{x} = \lambda \vec{x}
+\end{align*}
+where:
+\begin{itemize}
+    \item $\vec{x}$ is a non-zero vector.
+    \item $\lambda$ is the eigenvalue associated with $\vec{x}$.
+\end{itemize}
+This equation means that, the action of $A$ on $\vec{x}$ (multiplying $A$ by $\vec{x}$) is the same as simply scaling $\vec{x}$ by the factor $\lambda$. So, instead of changing the direction of $\vec{x}$, the matrix $A$ only changes its length. 
+\subsection*{\textbf{Eigenvalues}}
+An \textbf{eigenvalue} is a scalar associated with a particular eigenvector. It tells us how much the eigenvector is scaled (stretched, shrunk, or flipped) when multiplied by the matrix $A$. So, in the equation:
+\begin{align*}
+    A\vec{x} = \lambda \vec{x}
+\end{align*}
+$\lambda$ is the eigenvalue, which can have several effects on the eigenvector $\vec{x}$:
+\begin{itemize}
+    \item If $\lambda > 1$, the eigenvector is stretched.
+    \item If $0< \lambda <1$, the eigenvector is compressed.
+    \item If $\lambda = 1$, the eigenvector stays the same length.
+    \item If $\lambda = 0$, the eigenvector is mapped to the zero vector (a "degenerate" case, often meaning that $A$ has some singular or non-invertible behavior).
+    \item If $\lambda < 0$, the eigenvector is flipped (pointing in the opposite direction).
+\end{itemize}
+
+\section*{\textbf{Computing Eigenvalues}}
+There are several methods to calculate eigenvalues of a matrix.
+\begin{enumerate}
+\item \textbf{Power Iteration}
+\item \textbf{Inverse Iteration}
+\item \textbf{Rayleigh Quotient Iteration}
+\item \textbf{QR Algorithm}
+\item \textbf{Householder Reduction}
+\end{enumerate}
+
+\subsection*{\textbf{Power Iteration}}
+\begin{itemize}
+    \item \textbf{Description:} Power iteration is an iterative method that finds the dominant eigenvalue (the eigenvalue with the largest magnitude) and its corresponding eigenvector.
+    \item \textbf{Process:} Repeatedly multiply an arbitrary vector $\vec{x}$ by a matrix $A$ and normalize the result. The vector will eventually converge to the dominant eigenvector, and the eigenvalue can be estimated from the ratio of successive vector norms.
+\end{itemize}
+
+\subsection*{\textbf{Inverse Iteration}}
+\begin{itemize}
+    \item \textbf{Description:} Inverse iteration is a modification of power iteration that can be used to find an eigenvalue close to a given initial estimate. It is useful for finding non-dominant eigenvalues.
+    \item \textbf{Process:} For an approximate eigenvalue $\lambda_0$, the matrix $\brak{A - \lambda_0 I}^{-1}$ is used in power iteration. This method can yield an eigenvector associated with an eigenvalue close to $\lambda_0$.
+\end{itemize}
+
+\subsection*{\textbf{Rayleigh Quotient Iteration}}
+\begin{itemize}
+    \item \textbf{Description:} Rayleigh quotient iteration is an iterative method that converges cubically to an eigenvalue near an initial guess. It is similar to inverse iteration but uses the Rayleigh quotient to update the approximation of the eigenvalue.
+    \item \textbf{Process:} At each step, the Rayleigh quotient is computed to update the eigenvalue estimate.
+\end{itemize}
+\subsection*{\textbf{QR Algorithm}}
+\begin{itemize}
+    \item \textbf{Description:} The $QR$ algorithm is one of the most widely used methods for finding all eigenvalues of a matrix. It iteratively factors the matrix $A$ into $QR$ (where $Q$ is an orthogonal matrix and $R$ is upper triangle) and then form $A_{k+1} = RQ$. This process eventually leads to a matrix that is nearly diagonal, with eigenvalues on the diagonal.
+    \item \textbf{Suitability:} Effective for both symmetric and non-symmetric matrices and can be adapted to find both real and complex eigenvalues.
+\end{itemize}
+\subsection*{\textbf{Householder Reduction}}
+\begin{itemize}
+    \item \textbf{Description:} Householder transformations are used to reduce a matrix to a simpler form, such as upper Hessenberg form (for general matrices) or tridiagonal form (for symmetric matrices), before applying other algorithms like the QR algorithm.
+    \item \textbf{Suitability:} Mainly used as a preprocessing step to improve the efficiency of other eigenvalue algorithms
+\end{itemize}
+The following table summarizes about all the methods to calculate eigenvalues:
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Method} & \textbf{Matrix Type} & \textbf{Finds} & \textbf{Pros} & \textbf{Cons}\\
+\hline
+Power Iteration & Any & Largest eigenvalue & Simple and efficient for largest eigenvalue & Only finds dominant eigenvalue\\
+\hline
+Inverse Iteration & Any & One eigenvalue & Finds non-dominant eigenvalues & Needs good initial guess, inversion\\
+\hline
+Rayleigh Quotient Iteration & Any & One eigenvalue & Very fast convergence near eigenvalue & Expensive and needs a good initial guess\\
+\hline
+QR Algorithm & Any & All eigenvalues & Effective for dense matrices & Computationally intensive\\
+\hline
+Householder Reduction & Any & Used in QR, others & Simplifies matrix for other methods & Primarily a preprocessing step\\
+\hline
+\end{tabular}%
+}
+\end{table}
+Before choosing any algorithm there are a few things to keep in mind:
+\begin{itemize}
+    \item Time Complexity
+    \item Memory Usage
+    \item Convergence Rate
+\end{itemize}
+
+\subsection*{Time Complexity}
+Time complexity describes how the computation time of an algorithm grows with the size of the input, typically measured in terms of big-O notation.
+
+\subsection*{Memory Usage}
+Memory usage describes how much memory an algorithm needs relative to the input size.
+
+\subsection*{Convergence Rate}
+Convergence rate describes how quickly an iterative algorithm approaches the solution. Faster convergence means fewer iterations are needed for an acceptable accuracy.\\
+\\
+The table for the time complexity, memory usage, convergence rate for all the above algorithms is given below:
+\begin{table}[H]
+\centering
+\renewcommand{\arraystretch}{1.5}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Algorithm} & \textbf{Time Complexity} & \textbf{Memory Usage} & \textbf{Convergence Rate Order} \\ \hline
+Power Iteration & $O(n^2)$ per iteration & $O(n)$ & Linear $(|\lambda_2 / \lambda_1|) $ \\ \hline
+Inverse Iteration & $O(n^3)$ & $O(n^2)$ & Linear (if close to eigenvalue $ (\lambda )$) \\ \hline
+Rayleigh Quotient Iteration &  $O(n^3)$ per iteration & $O(n^2)$ & Cubic (superlinear near eigenvalue) \\ \hline
+QR Algorithm & $O(n^3)$ for dense,  $O(kn)$ for sparse &  $O(n^2)$  & Quadratic to cubic (depending on shifts) \\ \hline
+Householder Reduction & $ O(n^3) $ &  $O(n^2)$ & Not iterative (used for tridiagonalization) \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\section*{Conclusion}
+From the above two tables, I came to the conclusion to use the Householder Reduction followed by QR decomposition to compute eigenvalues. This is for the following reasons:
+\begin{itemize}
+    \item \textbf{Faster Convergence of QR Algorithm:} \\
+    Householder reduction transforms the matrix into a bidiagonal form, allowing the QR algorithm to converge more quickly. This reduces the number of iterations needed to reach convergence, making the method more efficient than direct diagonalization.
+
+    \item \textbf{Reduction in Computational Complexity:} \\
+    The Householder transformation simplifies the matrix to a bidiagonal form, which is easier for QR decomposition to handle. This results in lower computational cost, especially for large matrices, compared to methods like direct diagonalization.
+
+    \item \textbf{Preservation of Orthogonality:} \\
+    Householder reflections are orthogonal, preserving the matrix's eigenvalues and ensuring numerical stability. This prevents error accumulation, making the method reliable for ill-conditioned matrices.
+
+    \item \textbf{Good Convergence Behavior:} \\
+    The QR algorithm with Householder reduction converges quickly, even for large or ill-conditioned matrices. This is faster than methods like Power Iteration, making it more suitable for large-scale eigenvalue problems.
+
+    \item \textbf{Time Complexity and Memory Usage:} \\
+    The time complexity of the Householder reduction and QR algorithm is \(O(n^3)\), with reduced iterations improving efficiency. Memory usage is \(O(n^2)\), which is manageable for large matrices and more efficient than methods like Power Iteration.
+\end{itemize}
+
+\section*{References}
+
+\begin{itemize}
+    \item Gilbert Strang \textit{MIT OpenCourseWare}. Available at: \\\href{https://youtu.be/d32WV1rKoVk?si=PJ0xc0u7Det-Qjxe}{Computing Eigenvalues and Singular Values} and \href{https://youtu.be/lXNXrLcoerU?si=Cb9MwbQ23ImTScsT}{Eigenvalues and Eigenvectors}
+
+    
+    \item Gilbert Strang, \textit{Linear Algebra and Its Applications}, Wellesley-Cambridge Press, 5th edition, 2016. Available at: \\
+    \href{https://math.mit.edu/~gs/linearalgebra/}{https://math.mit.edu/~gs/linearalgebra/}
+
+    \item Gene H. Golub and Charles F. Van Loan, \textit{Matrix Computations}, Johns Hopkins University Press, 4th edition, 2013. More details: \\
+    \href{https://jhupbooks.press.jhu.edu/title/matrix-computations}{https://jhupbooks.press.jhu.edu/title/matrix-computations}
+
+    \item MIT OpenCourseWare, \textit{Linear Algebra Course}, 2010. Available at: \\
+    \href{https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/}{https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/}
+\end{itemize}
+\end{document}
